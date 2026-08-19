@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Caxly — Privacy Policy</title>
+<style>
+  :root { color-scheme: light dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 48px 24px 96px;
+    line-height: 1.65;
+    color: #1a1a1a;
+    background: #ffffff;
+  }
+  h1 { font-size: 28px; margin-bottom: 4px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 19px; margin-top: 40px; border-bottom: 1px solid #eee; padding-bottom: 8px; }
+  ul { padding-left: 22px; }
+  li { margin-bottom: 8px; }
+  .callout {
+    background: #f2f7ff;
+    border-radius: 12px;
+    padding: 16px 20px;
+    margin: 24px 0;
+    font-weight: 600;
+  }
+  a { color: #2f6feb; }
+  table { border-collapse: collapse; width: 100%; margin: 16px 0; }
+  th, td { text-align: left; border: 1px solid #e2e2e2; padding: 8px 10px; font-size: 14px; }
+  th { background: #fafafa; }
+  footer { margin-top: 56px; color: #888; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy for Caxly</h1>
+<p class="updated">Last updated: August 2026</p>
+
+<p>Caxly ("the app", "we", "our") is an offline-first purchase recording and monthly settlement app for Android, developed by Jaherul Hasan. This policy explains what happens to your information when you use Caxly.</p>
+
+<div class="callout">In short: Caxly does not collect, transmit, or share any of your data. Everything you enter stays on your device, encrypted, unless you personally choose to export or share it.</div>
+
+<h2>1. Data we collect</h2>
+<p>Caxly collects <strong>none</strong> of your personal or financial data on any server. We do not operate a backend, and the app has no analytics, advertising, or crash-reporting SDKs built into it.</p>
+<p>All information you enter — expense categories ("cards"), purchase item names, prices, and dates — is stored exclusively in an encrypted local database on your device (SQLCipher, AES-256). It never leaves your device unless you explicitly export or share it yourself (see Section 3).</p>
+
+<h2>2. Permissions the app uses, and why</h2>
+<table>
+<tr><th>Permission</th><th>Purpose</th></tr>
+<tr><td>Biometric / device credential</td><td>Optional app-lock feature. Authentication is handled entirely by your device's own OS — Caxly never sees or stores your fingerprint, face, or PIN.</td></tr>
+<tr><td>Notifications</td><td>Optional daily reminder to record purchases. The notification text is generic and never contains your financial data.</td></tr>
+<tr><td>Schedule exact alarms / receive boot completed</td><td>Needed only so the daily reminder above keeps firing after your phone restarts.</td></tr>
+<tr><td>Query specific installed apps</td><td>Used only to detect which UPI payment apps (e.g. Google Pay, PhonePe, Paytm) are installed on your device, so Caxly can offer to open your preferred one. Caxly does not read data from these apps and cannot see your payment activity inside them.</td></tr>
+</table>
+
+<h2>3. Exporting and sharing your own data</h2>
+<p>Caxly lets <em>you</em> export your data at any time:</p>
+<ul>
+  <li><strong>JSON backup</strong> — a full backup of your cards and purchases, for restoring on the same or a new device.</li>
+  <li><strong>CSV export</strong> — a spreadsheet-friendly export of purchases for a card/month.</li>
+  <li><strong>PDF settlement</strong> — a shareable monthly settlement summary.</li>
+</ul>
+<p>These files are generated on your device and only leave it if <em>you</em> choose to share them (e.g. via WhatsApp, email, or Google Drive) through Android's own share sheet. We — the developer — never receive a copy.</p>
+
+<h2>4. Data storage and security</h2>
+<ul>
+  <li>Your database is encrypted at rest (SQLCipher / AES-256); the encryption key is generated on-device and stored using Android's Keystore-backed secure storage.</li>
+  <li>Caxly is excluded from Android's automatic cloud/device backup, so your data is never silently copied off your device by the OS.</li>
+  <li>Screenshots and screen recording are blocked throughout the app.</li>
+  <li>Uninstalling the app permanently deletes all locally stored data. There is no server-side copy to separately request deletion of.</li>
+</ul>
+
+<h2>5. Payments</h2>
+<p>Caxly does not process payments and is not a payment app. It only opens a UPI app you already have installed and already trust (e.g. Google Pay, PhonePe). Caxly never stores, sees, or transmits your payment credentials, UPI PIN, bank details, or card numbers.</p>
+
+<h2>6. Third parties</h2>
+<p>Caxly does not share data with any third party, advertiser, or analytics provider, because it does not collect any data to share in the first place.</p>
+
+<h2>7. Children's privacy</h2>
+<p>Caxly is a general personal-finance utility and is not directed at children. We do not knowingly collect data from children, and per Section 1, we do not collect data from anyone.</p>
+
+<h2>8. Changes to this policy</h2>
+<p>If this policy changes, the "Last updated" date above will change accordingly. Continued use of the app after an update constitutes acceptance of the revised policy.</p>
+
+<h2>9. Contact</h2>
+<p>Questions about this policy or the app can be sent to:</p>
+<ul>
+  <li>Email: <a href="mailto:meetjaherul@gmail.com">meetjaherul@gmail.com</a></li>
+  <li>GitHub: <a href="https://github.com/jaherulhasan06">github.com/jaherulhasan06</a></li>
+</ul>
+
+<footer>Caxly is developed and maintained by Jaherul Hasan.</footer>
+
+</body>
+</html>
